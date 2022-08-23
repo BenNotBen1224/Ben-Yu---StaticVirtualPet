@@ -1,19 +1,18 @@
-int x = 50;
-int y = 23;
-int z = 56;
+float x = 50;
+float y = 23;
+float z = 56;
 
 void setup(){
 
 size(400, 400);
 
-};
+}
 
 void draw(){
-System.out.println("hey");
 
-x = x+2;
-y = y+3;
-z = z+4;
+x = 255*sin(x);
+y = 255*cos(y);
+z = 255*tan(z);
 
 fill(102,255,102);
 //left hand
@@ -49,10 +48,12 @@ line(205, 100, 210, 80);
 line(195,255,205,265);
 line(195,265,205,255);
 
+fill(x, y, z);
+
 strokeWeight(0);
 textSize(24);
 text("Niubi Plus", 250, 70);
 
-fill(x, y, z);
+
 
 }
