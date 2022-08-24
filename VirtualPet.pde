@@ -1,18 +1,25 @@
-float x = 50;
+float x = 178;
 float y = 23;
-float z = 56;
+float z = 85;
+
+float a = 1;
+float b = 99;
+float c = 199;
+
 
 void setup(){
-
 size(400, 400);
 
 }
 
 void draw(){
+x = 255*sin(x/25);
+y = 255*cos(y/25);
+z = 255*tan(z/25);
 
-x = 255*sin(x);
-y = 255*cos(y);
-z = 255*tan(z);
+a = 100+155*tan(a/25);
+b = 100+155*cos(b/25);
+c = 100+155*sin(c/25);
 
 fill(102,255,102);
 //left hand
@@ -30,7 +37,9 @@ triangle(160, 340, 140, 280, 200, 280);
 triangle(240, 340, 260, 280, 200, 280);
 fill(255,255,255);
 //body
+fill(x, y, z);
 ellipse(200, 230,170,160);
+fill(255,255,255);
 //head
 fill(23,23,23);
 ellipse(200,150,120,110);
@@ -48,12 +57,10 @@ line(205, 100, 210, 80);
 line(195,255,205,265);
 line(195,265,205,255);
 
-fill(x, y, z);
+fill(a, b, c);
 
 strokeWeight(0);
 textSize(24);
-text("Niubi Plus", 250, 70);
-
-
+text("Niubi Plus", 140, 380);
 
 }
