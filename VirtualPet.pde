@@ -6,6 +6,8 @@ float a = 1;
 float b = 99;
 float c = 199;
 
+float d = 1;
+float e = 1;
 
 void setup(){
 size(400, 400);
@@ -21,8 +23,29 @@ a = 100+155*tan(a/25);
 b = 100+155*cos(b/25);
 c = 100+155*sin(c/25);
 
-fill(102,255,102);
+d = 400*tan(d/25);
+e = 400*cos(e/25);
+
+fill(a, b, c);
+strokeWeight(0);
+textSize(24);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+text("Niubi Plus", d, e);
+fill(255,255,255);
+
 //left hand
+fill(102,255,102);
 triangle(80, 220, 100, 260, 140, 200);
 triangle(50, 270, 80, 220, 90, 240);
 triangle(50, 270, 100, 260, 90, 240);
@@ -54,15 +77,7 @@ line(190, 72, 180, 70);
 line(210, 72, 220, 70);
 line(190, 100, 185, 80);
 line(205, 100, 210, 80);
-
 //stomach
 line(195,255,205,265);
 line(195,265,205,255);
-
-fill(a, b, c);
-
-strokeWeight(0);
-textSize(24);
-text("Niubi Plus", 140, 380);
-
 }
